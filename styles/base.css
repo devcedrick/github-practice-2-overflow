@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Karla', Arial;
+}
+
+:root{
+  --primary-color: #1B512D;
+  --secondary-color: #73E2A7;
+  --neutral-green: #C0E3D1;
+  --neutral-gray: 	#98a6bd;
+  --body-font: 16px;
+}
