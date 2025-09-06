@@ -1,0 +1,31 @@
+.community-header {
+  background-color: white;
+  padding: 4rem 6rem;        /* big padding for desktop */
+  border-radius: 12px 12px 0 0;
+  text-align: left;
+  font-family: 'Karla', sans-serif;
+  max-width: 1000px;         /* limit line width */
+  margin: 3rem auto;         /* center on page */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* subtle shadow */
+}
+
+.community-header h1 {
+  margin: 0;
+  font-size: 2.8rem;         /* larger for desktop */
+  font-weight: 700;
+  color: var(--secondary-color); /* teal */
+}
+
+.community-header .guarantee {
+  color: var(--primary-color);   /* dark green */
+  font-weight: 600;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;             /* bigger subheading */
+}
+
+.community-header .description {
+  color: var(--neutral-gray);
+  font-size: 1.25rem;            /* larger body text */
+  line-height: 1.9;              /* easy reading */
+  max-width: 800px;
+}
