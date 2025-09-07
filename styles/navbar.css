@@ -1,8 +1,8 @@
-:root {
-  --primary-color: #1B512D;
-  --secondary-color: #73E2A7;
-  --neutral-green: #C0E3D1;
-  --neutral-gray: #98a6bd;
+:root{
+  --primary-color: 	#2ab2af;
+  --secondary-color: #c0df34;
+  --neutral-primary: 	#e5eff5;
+  --neutral-secondary: 	#98a6bd;
   --body-font: 16px;
 }
 
