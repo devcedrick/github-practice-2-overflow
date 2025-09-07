@@ -16,25 +16,26 @@
   <link rel="stylesheet" href="/styles/navbar.css">
   <link rel="stylesheet" href="/styles/navbar.css">
   <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="styles/signup.css">
 
   <title>Frontend Mentor | Single Price Grid Component</title>
 </head>
 <body>
   
   <!-- Navigation Bar -->
-<header>
-  <nav class="navbar">
-    <div class="logo">OverFlow</div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#" class="btn-signup" onclick="showSignUpForm()">Sign Up</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <nav class="navbar">
+      <div class="logo">OverFlow</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" class="btn-signup" onclick="showSignUpForm()">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
+  <main>
     <section class="community-header">
       <div class="upper-content">
         <h1>Join our community</h1>
@@ -51,7 +52,7 @@
           <h5 class="price-details"><span class="price">&dollar;29</span> per month</h5>
           <p>Full access for less than &dollar;1 a day</p>
           <div class="lower-monthly-subs">
-            <button>Sign Up</button>
+            <button class="btn-signup">Sign Up</button>
           </div>
         </div>       
         <!-- Why Us -->
@@ -71,7 +72,61 @@
       </div>
     </section>
   </main>
-  <footer>
+  
+  <div class="signup-container">
+      <form class="signup-form">
+        <div class="form-header">
+          <h2>Create Account</h2>
+        </div>
+        <div class="form-body">
+          <div class="name-container">
+            <div class="input-container">
+              <p class="input-label">First Name</p>
+              <input type="text" class="input-field" placeholder="First Name">
+            </div>
+            <div class="input-container">
+              <p class="input-label">Last Name</p>
+              <input type="text" class="input-field" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="input-container">
+              <p class="input-label">Email Addres</p>
+              <input type="email" id="email-field" class="input-field" placeholder="Email">
+          </div>
+          
+          <div class="pw-container">
+            <div class="input-container">
+              <p class="input-label">Password</p>
+              <input type="password" class="input-field" placeholder="Password">
+            </div>
+            <div class="input-container">
+              <p class="input-label">Confirm Password</p>
+              <input type="password" class="input-field" placeholder="Re-type Password">
+            </div>
+          </div>
+          <div class="input-container">
+            <p class="input-label">Card Number</p>
+            <input type="text" class="input-field" placeholder="Card Number">
+          </div>
+          <div class="card-details">
+            <div class="input-container">
+              <p class="input-label">Expiry Date</p>
+              <input type="month" class="input-field" placeholder="MM/YYYY">
+            </div>
+            <div class="input-container">
+              <p class="input-label">CVV</p>
+              <input type="password" id="cvv-fields" class="input-field" placeholder="CVV" maxlength="4">
+            </div>
+          </div>
+        </div>
+        <div class="form-footer">
+          <button class="cancel-signup-btn" onclick="cancelSignUpForm(event)">Cancel</button>
+          <button class="confirm-signup-btn">Confirm</button>
+        </div>
+      </form>
+    
+  </div>
+
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-section">
@@ -128,5 +183,7 @@
       <p>&copy; 2024 OverFlow. All rights reserved. Built for developers, by developers.</p>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

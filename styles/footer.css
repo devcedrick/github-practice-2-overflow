@@ -12,10 +12,13 @@ body {
 
 /* Footer Styles */
 .footer {
+  position: relative;
+  bottom: 0;
   background-color: var(--primary-color);
   color: white;
   padding: 2rem 3rem 1rem; /* Increased padding for laptop screens */
   margin-top: auto;
+  
 }
 
 .footer-content {
