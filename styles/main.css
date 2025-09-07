@@ -1,0 +1,142 @@
+.community-header {
+  background-color: white;
+  border-radius: 12px;
+  text-align: left;
+  font-family: 'Karla', sans-serif;
+  max-width: 1000px;         /* limit line width */
+  margin: 3rem auto;         /* center on page */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* subtle shadow */
+  overflow: hidden;
+}
+
+.community-header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--secondary-color); /* teal */
+}
+
+.community-header .guarantee {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+.community-header .description {
+  color: var(--neutral-secondary);
+  font-size: 1.25rem;            /* larger body text */
+  line-height: 1.9;              /* easy reading */
+  max-width: 800px;
+}
+
+.upper-content {
+    padding: 30px 40px        /* big padding for desktop */
+}
+
+.lower-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.monthly-subs{
+  background-color: var(--primary-color);
+  color: white;
+  padding: 30px 40px;
+}
+
+.subs-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.price-details {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 200;
+  gap: 10px;
+  padding: 0.5rem 0;
+}
+
+.price{
+  font-size: 2.1rem;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.monthly-subs p{
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.lower-monthly-subs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.lower-monthly-subs button {
+  width: 90%;
+  padding: 12px 0;
+  background-color: var(--secondary-color);
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 600;
+  box-shadow: 0 2px 100px 10px rgba(0, 0, 0, 0.193);
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.lower-monthly-subs button:hover{
+  background-color: black;
+  transform: scale(1.04);
+}
+
+
+/* Why Us Section */
+.why-us-section {
+  background-color: #22c4b7;
+  color: white;
+  padding: 30px 40px;
+  transition: all 300ms ease-in-out; /* Added smooth transition */
+  cursor: pointer; /* Added pointer cursor */
+}
+
+.why-us-section h3 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: 'Karla', sans-serif;
+}
+
+.why-us-list {
+  list-style: none !important;
+  list-style-type: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.why-us-list li {
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 0.3rem;
+  opacity: 0.9;
+  font-family: 'Karla', sans-serif;
+  line-height: 1.4;
+  transition: all 200ms ease-in-out; /* Added smooth transition for list items */
+  cursor: pointer; /* Added pointer cursor */
+}
+
+/* Hover effect for individual list items */
+.why-us-list li:hover {
+  opacity: 1;
+  transform: translateX(5px);
+  font-weight: 400;
+}
