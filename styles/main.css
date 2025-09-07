@@ -13,11 +13,11 @@
   margin: 0;
   font-size: 2.8rem;
   font-weight: 700;
-  color: var(--secondary-color); /* teal */
+  color: var(--primary-color); /* teal */
 }
 
 .community-header .guarantee {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 600;
   margin: 1.5rem 0;
   font-size: 1.5rem;
@@ -84,7 +84,7 @@
   outline: none;
   border: none;
   border-radius: 6px;
-  color: white;
+  color: white !important;
   font-size: 1.15rem;
   font-weight: 600;
   box-shadow: 0 2px 100px 10px rgba(0, 0, 0, 0.193);
@@ -93,7 +93,7 @@
 }
 
 .lower-monthly-subs button:hover{
-  background-color: black;
+  background-color: black !important;
   transform: scale(1.04);
 }
 
@@ -139,4 +139,73 @@
   opacity: 1;
   transform: translateX(5px);
   font-weight: 400;
+}
+
+@media (max-width: 575px) {
+  .community-header {
+    margin: 1.5rem auto;
+    max-width: 90%;
+    border-radius: 8px;
+  }
+  
+  .community-header h1 {
+    font-size: 1.75rem;
+  }
+  
+  .community-header .guarantee {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+  
+  .community-header .description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .upper-content {
+    padding: 20px;
+  }
+  
+  .lower-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .monthly-subs {
+    padding: 20px;
+    border-radius: 0;
+  }
+  
+  .price-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .price {
+    font-size: 1.8rem;
+  }
+  
+  .lower-monthly-subs {
+    margin-top: 25px;
+  }
+  
+  .lower-monthly-subs button {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.1rem;
+  }
+  
+  .why-us-section {
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .why-us-section h3 {
+    font-size: 1.2rem;
+  }
+  
+  .why-us-list li {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
 }

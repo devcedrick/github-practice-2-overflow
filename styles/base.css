@@ -13,3 +13,7 @@
   --neutral-secondary: 	#98a6bd;
   --body-font: 16px;
 }
+
+body.no-scroll{
+  overflow: hidden;
+}
