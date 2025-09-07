@@ -1,0 +1,293 @@
+/* Body Layout to Push Footer Down */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Footer Styles */
+.footer {
+  position: relative;
+  bottom: 0;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 3rem 1rem; /* Increased padding for laptop screens */
+  margin-top: auto;
+  
+}
+
+.footer-content {
+  max-width: 1400px; /* Increased max-width for laptops */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Wider columns */
+  gap: 3rem; /* Increased gap for better spacing */
+}
+
+.footer-section h3 {
+  color: white;
+  margin-bottom: 1rem; /* Increased margin */
+  font-size: 1.3rem; /* Larger heading */
+  font-weight: 600;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.6rem; 
+}
+
+.footer-section ul li a {
+  color: rgb(231, 221, 221);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem; 
+}
+
+.footer-section ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.footer-section p {
+  line-height: 1.6; /* Better line height for reading */
+  color: rgb(231, 221, 221);
+  font-size: 1rem; /* Standard text size */
+  margin-bottom: 1rem; /* Increased margin */
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem; /* Increased gap */
+  margin-top: 1rem;
+}
+
+/* Updated social links for images */
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px; /* Larger icons for laptop */
+  height: 45px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  padding: 8px;
+}
+
+.social-links a:hover {
+  background-color: var(--neutral-green);
+}
+
+/* Style the social media images */
+.social-links a img {
+  width: 24px !important;
+  height: 24px !important;
+  filter: brightness(0) invert(1); /* Make icons white */
+  transition: filter 0.3s ease;
+}
+
+.social-links a:hover img {
+  filter: brightness(0); /* Make icons dark on hover */
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--neutral-gray);
+  margin-top: 2rem; /* Increased margin */
+  padding-top: 1rem; /* Increased padding */
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.footer-bottom p {
+  color: var(--neutral-gray);
+  margin: 0;
+  font-size: 0.9rem; /* Slightly larger copyright text */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .footer {
+    padding: 1.5rem 2rem 1rem;
+  }
+  
+  .footer-content {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* Body Layout to Push Footer Down */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Footer Styles */
+.footer {
+  position: relative;
+  bottom: 0;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 3rem 1rem; /* Increased padding for laptop screens */
+  margin-top: auto;
+  
+}
+
+.footer-content {
+  max-width: 1400px; /* Increased max-width for laptops */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Wider columns */
+  gap: 3rem; /* Increased gap for better spacing */
+}
+
+.footer-section h3 {
+  color: white;
+  margin-bottom: 1rem; /* Increased margin */
+  font-size: 1.3rem; /* Larger heading */
+  font-weight: 600;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.6rem; 
+}
+
+.footer-section ul li a {
+  color: rgb(231, 221, 221);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem; 
+}
+
+.footer-section ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.footer-section p {
+  line-height: 1.6; /* Better line height for reading */
+  color: rgb(231, 221, 221);
+  font-size: 1rem; /* Standard text size */
+  margin-bottom: 1rem; /* Increased margin */
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem; /* Increased gap */
+  margin-top: 1rem;
+}
+
+/* Updated social links for images */
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px; /* Larger icons for laptop */
+  height: 45px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  padding: 8px;
+}
+
+.social-links a:hover {
+  background-color: var(--neutral-green);
+}
+
+/* Style the social media images */
+.social-links a img {
+  width: 24px !important;
+  height: 24px !important;
+  filter: brightness(0) invert(1); /* Make icons white */
+  transition: filter 0.3s ease;
+}
+
+.social-links a:hover img {
+  filter: brightness(0); /* Make icons dark on hover */
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--neutral-gray);
+  margin-top: 2rem; /* Increased margin */
+  padding-top: 1rem; /* Increased padding */
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.footer-bottom p {
+  color: var(--neutral-gray);
+  margin: 0;
+  font-size: 0.9rem; /* Slightly larger copyright text */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .footer {
+    padding: 1.5rem 2rem 1rem;
+  }
+  
+  .footer-content {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 575px) {
+  .footer {
+    padding: 1rem 1rem 0.5rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .main-content {
+    padding: 1rem;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.25rem;
+  }
+  
+  .footer-section p {
+    font-size: 0.9rem;
+  }
+  
+  .social-links a {
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+  }
+  
+  .social-links a img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}

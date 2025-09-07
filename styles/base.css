@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Karla', Arial;
+}
+
+:root{
+  --primary-color: 	#2ab2af;
+  --secondary-color: #c0df34;
+  --neutral-primary: 	#e5eff5;
+  --neutral-secondary: 	#98a6bd;
+  --body-font: 16px;
+}
+
+body.no-scroll{
+  overflow: hidden;
+}
