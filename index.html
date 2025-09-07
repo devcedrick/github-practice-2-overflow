@@ -3,59 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  
+    
   <link rel="stylesheet" href="/styles/navbar.css">
-
-  <title>Frontend Mentor | Single Price Grid Component</title>
   <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/footer.css">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-<header>
-  <nav class="navbar">
-    <div class="logo">OverFlow</div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#" class="btn-signup" onclick="showSignUpForm()">Sign Up</a></li>
-    </ul>
-  </nav>
-</header>
-
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
   
-  <footer>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">OverFlow</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" class="btn-signup" onclick="showSignUpForm()">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="main-content">
+    Join our community
     
+    30-day, hassle-free money back guarantee
+    
+    Gain access to our full library of tutorials along with expert code reviews.
+    
+    Perfect for any developers who are serious about honing their skills.
+    
+    Monthly Subscription
+    
+    &dollar;29 per month
+    
+    Full access for less than &dollar;1 a day
+    
+    Sign Up
+    
+    Why Us
+    
+    Tutorials by industry experts
+    Peer &amp; expert code review
+    Coding exercises
+    Access to our GitHub repos
+    Community forum
+    Flashcard decks
+    New videos every week
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>OverFlow</h3>
+        <p>Empowering developers with expert tutorials, code reviews, and a supportive community to help you master your craft.</p>
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank" class="social-link">
+            <img src="images/icons/github-icon.png" alt="GitHub" style="width: 24px; height: 28px; filter: brightness(0) invert(1);">
+          </a>
+          <a href="https://linkedin.com/" target="_blank" class="social-link">
+            <img src="images/icons/linkedin-icon.png" alt="LinkedIn" style="width: 24px; height: 28px; filter: brightness(0) invert(1);">
+          </a>
+          <a href="https://twitter.com/" target="_blank" class="social-link">
+            <img src="images/icons/twitter-icon.png" alt="Twitter" style="width: 24px; height: 28px; filter: brightness(0) invert(1);">
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">GitHub Repos</a></li>
+          <li><a href="#">Code Reviews</a></li>
+          <li><a href="#">Flashcards</a></li>
+          <li><a href="#">Coding Exercises</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 OverFlow. All rights reserved. Built for developers, by developers.</p>
+    </div>
   </footer>
 </body>
 </html>
