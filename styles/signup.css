@@ -1,0 +1,230 @@
+.signup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  backdrop-filter: blur(3px);
+  display: none;
+}
+
+.signup-container.active{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-form {
+  width: 1000px;
+  height: 600px;
+  overflow-y: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--neutral-secondary);
+  border-style: outset;
+  box-shadow: 0 10px 0 var(--primary-color) inset;
+  margin: auto;
+  background-color: white;
+  padding-top: 10px;
+}
+
+.form-header{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 30px 60px 10px;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  flex: 1;
+  padding: 30px 60px;
+  overflow-y: auto;
+}
+
+.form-footer {
+  height: 70px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.cancel-signup-btn,
+.confirm-signup-btn {
+  margin: 0 10px;
+  padding: 10px 30px;
+  border: 1px solid var(--neutral-primary);
+  border-radius: 6px;
+  box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.01);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.1s ease-in-out;
+}
+
+.confirm-signup-btn {
+  background-color: var(--secondary-color);
+  margin-right: 50px;
+}
+
+.cancel-signup-btn{
+  background-color: var(--neutral-secondary);
+}
+
+.confirm-signup-btn:hover {
+  background-color: #9db72b;
+  transform: scale(1.05);
+}
+
+.confirm-signup-btn:active {
+  background-color: #bbd157;
+}
+
+.cancel-signup-btn:hover {
+  background-color: #7a8495;
+  transform: scale(1.05);
+}
+
+.cancel-signup-btn:active{
+  background-color: #a6b6cf;
+}
+
+.form-header h2 {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.name-container, 
+.pw-container,
+.card-details{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.input-label {
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.input-field {
+  padding: 10px 15px;
+  width: 300px;
+  border-radius: 12px;
+  border: 1px solid var(--neutral-secondary);
+  font-size: 1rem;
+}
+
+.input-field:focus {
+  outline-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+#email-field {
+  width: 450px;
+}
+
+#cvv-field {
+  width: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;   /* thickness */
+  height: 8px;  /* for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media screen and (max-width: 575px) {
+  .signup-form {
+    width: 95% !important;
+    height: 80vh !important;
+    max-height: 90vh;
+    margin: 5vh auto;
+    padding-top: 5px;
+    border-radius: 8px;
+    box-shadow: 0 5px 0 var(--primary-color) inset;
+  }
+  
+  .form-header {
+    height: auto;
+    padding: 15px 20px 5px;
+    text-align: center;
+  }
+  
+  .form-header h2 {
+    font-size: 1.8rem !important;
+    width: 100%;
+  }
+  
+  .form-body {
+    padding: 15px 20px;
+    gap: 1rem;
+    overflow-y: auto;
+  }
+  
+  .form-footer {
+    height: auto;
+    padding: 15px 20px 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .cancel-signup-btn,
+  .confirm-signup-btn {
+    margin: 0 5px;
+    padding: 12px 25px;
+    flex: 1;
+    min-width: 120px;
+  }
+  
+  .confirm-signup-btn {
+    margin-right: 0 !important;
+  }
+  
+  .name-container, 
+  .pw-container,
+  .card-details {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .input-field {
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 12px 15px;
+  }
+  
+  #email-field,
+  #cvv-field {
+    width: 100% !important;
+  }
+  
+  /* Improve touch targets */
+  .input-container {
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-label {
+    margin-left: 5px;
+    font-size: 0.9rem;
+  }
+}
