@@ -50,13 +50,14 @@ body {
 /* Sign Up Button */
 .btn-signup {
   background-color: var(--secondary-color);
-  color: var(--primary-color) !important;
+  color: black !important;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .btn-signup:hover {
-  background-color: var(--neutral-green);
+  background-color: black;
+  color: white !important;
 }

@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="/styles/navbar.css">
+  <link rel="stylesheet" href="/styles/navbar.css">
+  <link rel="stylesheet" href="/styles/main.css">
 
   <title>Frontend Mentor | Single Price Grid Component</title>
   <link rel="stylesheet" href="/styles/base.css">
@@ -29,31 +31,43 @@
   </nav>
 </header>
 
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
+<main>
+    <section class="community-header">
+      <div class="upper-content">
+        <h1>Join our community</h1>
+        <p class="guarantee">30-day, hassle-free money back guarantee</p>
+        <p class="description">
+          Gain access to our full library of tutorials along with expert code reviews. 
+          Perfect for any developers who are serious about honing their skills.
+        </p>
+      </div>
+      <div class="lower-content">  
+        <!-- Monthly Subscription -->
+        <div class="monthly-subs">
+          <h3 class="subs-title">Monthly Subscription</h3>
+          <h5 class="price-details"><span class="price">&dollar;29</span> per month</h5>
+          <p>Full access for less than &dollar;1 a day</p>
+          <div class="lower-monthly-subs">
+            <button>Sign Up</button>
+          </div>
+        </div>       
+        <!-- Why Us -->
+        <div>
+          <div class ="why-us-section">
+            <h3>Why Us</h3>
+            <ul class="why-us-list">
+              <li>Tutorials by industry experts</li>
+              <li>Peer &amp; expert code review</li>
+              <li>Access to our GitHub repos</li>
+              <li>Coding exercises</li>
+              <li>Community forum</li>
+              <li>New videos every week</li>
+              <li>Flashcard decks</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer>
     
   </footer>
